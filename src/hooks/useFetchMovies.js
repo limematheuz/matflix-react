@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 const useFetchMovies = () => {
+  const api_token = import.meta.env.VITE_API_TOKEN;
   const [movies, setMovies] = useState(null);
 
   useEffect(() => {
@@ -19,8 +20,7 @@ const useFetchMovies = () => {
       method: "GET",
       headers: {
         accept: "application/json",
-        Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiYjQ5NzUzYTFiZTgzN2FkMjA4YzRlNDQwYTJiMWU3NyIsIm5iZiI6MTcyMzQ5ODY3My45NDY4LCJzdWIiOiI2NTJmYWU0YzBjYjMzNTE2Zjc0OTgxNGYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.07EgN4wna804Zf8PQSSjaFoP6y1fjS5n-fnq0O1dXvw",
+        Authorization: `Bearer ${api_token}`,
       },
     };
     const response = await fetch(url, options);
