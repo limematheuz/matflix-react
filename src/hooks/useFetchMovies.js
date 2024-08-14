@@ -8,14 +8,14 @@ const useFetchMovies = () => {
     async function getMovies() {
       const data = await fetchMoviesData();
       setMovies(data.results);
-      console.log(data);
+      console.log(data)
     }
     getMovies();
   }, []);
 
   async function fetchMoviesData() {
     const url =
-      "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc";
+      "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=true&language=en-US&page=2&sort_by=popularity.desc";
 
     const options = {
       method: "GET",

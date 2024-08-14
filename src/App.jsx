@@ -1,11 +1,12 @@
 import "./App.css";
-import {HomePage} from "./pages/HomePage/HomePage.jsx"
+import { BrowserRouter } from "react-router-dom";
+import Router from "./Router.jsx";
 
 function App() {
   return (
-    <main className="app-container">
-      <HomePage/>
-    </main>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
 
