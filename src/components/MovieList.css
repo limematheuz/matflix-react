@@ -9,12 +9,7 @@
   scroll-behavior: smooth;
   width: 100%;
   height: fit-content;
-  margin-top: -240px;
   position: relative;
-}
-
-.movie-list-container h3 {
-  margin-left: 70px;
 }
 
 .ml-carousel-controllers {
@@ -27,8 +22,6 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-left: 20px;
-  margin-top: 20px;
 }
 
 .ml-first-btn,
@@ -37,10 +30,10 @@
   background-color: #ff000000;
   cursor: pointer;
   border: none;
-  z-index: 2;
+  z-index: 1;
   height: 50px;
-  width: 50px;
-  top: 50%;
+  width: 60px;
+  top: 40%;
 }
 
 .ml-first-btn {
@@ -53,8 +46,9 @@
 
 .ml-first-btn:hover,
 .ml-second-btn:hover{
-  scale: 1.8;
+  scale: 1.2;
   transition: 0.3s ease-in-out;
-
 }
+
+
 

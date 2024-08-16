@@ -1,22 +1,34 @@
-.poster-movies-container{
-    position: relative;
-    width: 100%;
-    height: 100vh; /* O el tamaño que desees */
-    overflow: hidden;
+.poster-movies-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* O el tamaño que desees */
+  overflow: hidden;
 }
 
 .poster-movies-container img {
-    width: 100%;
-    height: 100%;
-    max-height: 100%;
-    object-fit: cover;
-  }
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  /* animation: back 20s ease infinite ;  */
+}
 
-  .pm-first-black-span{
-    position: absolute;
-    width: 100%;
-    height: 20%;
-    background: rgb(0, 0, 0);
+/* @keyframes back {
+  from {
+    transform: scale(1); 
+  }
+  to {
+    transform: scale(0.9); 
+  }
+} */
+
+
+
+.pm-first-black-span {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background: rgb(0, 0, 0);
   background: linear-gradient(
     180deg,
     rgb(0, 0, 0) 22%,
@@ -24,15 +36,15 @@
     rgba(0, 0, 0, 0.521) 70%,
     rgba(0, 0, 0, 0) 100%
   );
-    left: 0;
-    top: 0;
-  }
+  left: 0;
+  top: 0;
+}
 
-  .poster-movies-container .pm-second-black-span{
-    position: absolute;
-    width: 100%;
-    height: 20%;
-    background: rgb(0, 0, 0);
+ .pm-second-black-span {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
     rgb(0, 0, 0) 40%,
@@ -41,6 +53,27 @@
     rgba(0, 0, 0, 0.521) 90%,
     rgba(0, 0, 0, 0) 100%
   );
-    left: 0;
-    bottom: 0;
-  }
+  left: 0;
+  bottom: 0;
+}
+
+.pm-black-bg{
+ position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.422);
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+}
+
+.pm-mv-container{
+  position: sticky;
+  z-index: 2;
+  bottom: 20px;
+}
+
+.pm-mv-container h3{
+  margin-left: 60px;
+  margin-bottom: 20px;
+}

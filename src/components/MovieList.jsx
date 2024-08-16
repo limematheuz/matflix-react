@@ -15,25 +15,24 @@ export const MovieList = () => {
 
   return (
     <section className="movie-list-container" ref={sliderRef}>
-      <h3>Upcoming</h3>
       <div className="ml-carousel-controllers">
         <button
-          onClick={() => scroll(-1000)}
+          onClick={() => scroll(-1800)}
           className="ml-first-btn"
           aria-label="Scroll left"
         >
-          <img src={arrowLeft} alt="" />
+          <img className="ml-arrow" src={arrowLeft} alt="" />
         </button>
         <div className="movie-list-carousel">
           {movies &&
             movies.map((movie) => <Upcoming movie={movie} key={movie.id} />)}
         </div>
         <button
-          onClick={() => scroll(1000)}
+          onClick={() => scroll(1800)}
           className="ml-second-btn"
           aria-label="Scroll right"
         >
-          <img src={arrowRight} alt="" />
+          <img className="ml-arrow" src={arrowRight} alt="" />
         </button>
       </div>
     </section>
