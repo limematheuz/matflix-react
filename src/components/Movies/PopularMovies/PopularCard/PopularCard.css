@@ -1,0 +1,17 @@
+.popular-card-upcoming{
+    width: 270px;
+    height: 410px;
+}
+
+.popular-card-upcoming img{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.popular-card-upcoming:hover{
+    scale: 1.02;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: color(srgb red green blue);
+}

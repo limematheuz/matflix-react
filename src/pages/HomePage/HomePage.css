@@ -1,22 +1,38 @@
-/* .home-page-container{
-    background-color: pink;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
+.homePage-container{
+  display: grid;
+  grid-template-areas:
+    "header"
+    "poster-movies"
+    "popular-list"
+    "top-rated"
+    "footer";
+    grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  width: 100%;
+  /* border: 1px solid red; */
+}
 
-.home-page-container {
-    display: grid;
-    grid-template-areas:
-      "Header"
-      "MovieList"
-      "Footer";
-    grid-template-rows: auto 1fr auto; /* Header y Footer tienen altura automática, MovieList ocupa el espacio restante */
-    height: 100vh;
-    width: 100%;
-  }
-  
-  
+/* .header {
+  grid-area: header;
+}
+
+.poster-movies {
+  grid-area: poster-movies;
+  width: 100%;
+}
+
+.top-rated {
+  grid-area: top-rated;
+  width: 100%;
+
+}
+
+.popular-list {
+  grid-area: popular-list;
+  width: 100%;
+
+}
+
+.footer {
+  grid-area: footer;
+} */

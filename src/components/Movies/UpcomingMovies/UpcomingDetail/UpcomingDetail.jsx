@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import useFetchMovies from "../../../hooks/useFetchMovies";
-import "../MovieDetail/MovieDetail.css";
-import { Header } from "../../Header/Header";
+import useFetchMovies from "../../../../hooks/useFetchMovies";
+import "../UpcomingDetail/UpcomingDetail.css";
+import { Header } from "../../../Header/Header";
 
-export function MovieDetail() {
+export function UpcomingDetail() {
   const rick = "https://media.tenor.com/onTlUVMtWy4AAAAM/rickroll-rick.gif";
   const { id } = useParams();
   const movie = useFetchMovies();

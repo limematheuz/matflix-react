@@ -1,7 +1,7 @@
-import "./Upcoming.css";
+import "./UpcomingCard.css";
 import { Link } from "react-router-dom";
 
-export function Upcoming({ movie }) {
+export function UpcomingCard({ movie }) {
   return (
     <Link to={`/detailed-upcoming/${movie.id}`}>
       <div key={movie.id} className="movie-card-upcoming">

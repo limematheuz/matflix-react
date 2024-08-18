@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useFetchMovies = () => {
+const useFetchPopular = () => {
   const api_token = import.meta.env.VITE_API_TOKEN;
   const [movies, setMovies] = useState(null);
 
@@ -15,7 +15,7 @@ const useFetchMovies = () => {
 
   async function fetchMoviesData() {
     const url =
-      "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=true&language=en-US&page=1&sort_by=popularity.desc";
+      "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=true&language=en-US&page=3&sort_by=popularity.desc";
 
     const options = {
       method: "GET",
@@ -32,4 +32,4 @@ const useFetchMovies = () => {
   return movies;
 };
 
-export default useFetchMovies;
+export default useFetchPopular;

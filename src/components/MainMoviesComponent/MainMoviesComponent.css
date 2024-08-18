@@ -1,7 +1,7 @@
 .poster-movies-container {
   position: relative;
   width: 100%;
-  height: 100vh; /* O el tamaño que desees */
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -10,19 +10,7 @@
   height: 100%;
   max-height: 100%;
   object-fit: cover;
-  /* animation: back 20s ease infinite ;  */
 }
-
-/* @keyframes back {
-  from {
-    transform: scale(1); 
-  }
-  to {
-    transform: scale(0.9); 
-  }
-} */
-
-
 
 .pm-first-black-span {
   position: absolute;
@@ -68,12 +56,14 @@
 }
 
 .pm-mv-container{
+  max-width: 100%; 
   position: sticky;
   z-index: 2;
   bottom: 20px;
+  width: 100%;
 }
 
-.pm-mv-container h3{
+.pm-mv-container h2{
   margin-left: 60px;
-  margin-bottom: 20px;
+  color: white;
 }
