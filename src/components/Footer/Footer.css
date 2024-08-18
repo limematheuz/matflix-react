@@ -1,0 +1,24 @@
+.footer-container{
+   height: 100px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   
+   background-color: rgba(32, 32, 30, 0.644);
+}
+
+.footer-container h3{
+   text-align: center;
+   color: white;
+}
+
+.footer-container a{
+   text-align: center;
+   color: #ccc;
+}
+
+.footer-container a:hover{
+   color: white;
+}

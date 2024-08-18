@@ -1,0 +1,38 @@
+.homePage-container{
+  display: grid;
+  grid-template-areas:
+    "header"
+    "poster-movies"
+    "popular-list"
+    "top-rated"
+    "footer";
+    grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+/* .header {
+  grid-area: header;
+}
+
+.poster-movies {
+  grid-area: poster-movies;
+  width: 100%;
+}
+
+.top-rated {
+  grid-area: top-rated;
+  width: 100%;
+
+}
+
+.popular-list {
+  grid-area: popular-list;
+  width: 100%;
+
+}
+
+.footer {
+  grid-area: footer;
+} */

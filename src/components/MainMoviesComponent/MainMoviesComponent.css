@@ -1,0 +1,69 @@
+.poster-movies-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.poster-movies-container img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.pm-first-black-span {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgb(0, 0, 0) 22%,
+    rgba(0, 0, 0, 0.744) 50%,
+    rgba(0, 0, 0, 0.521) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  left: 0;
+  top: 0;
+}
+
+ .pm-second-black-span {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgb(0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.744) 60%,
+    rgba(0, 0, 0, 0.521) 80%,
+    rgba(0, 0, 0, 0.521) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  left: 0;
+  bottom: 0;
+}
+
+.pm-black-bg{
+ position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.422);
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+}
+
+.pm-mv-container{
+  max-width: 100%; 
+  position: sticky;
+  z-index: 2;
+  bottom: 20px;
+  width: 100%;
+}
+
+.pm-mv-container h2{
+  margin-left: 60px;
+  color: white;
+}

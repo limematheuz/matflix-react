@@ -1,14 +1,12 @@
 import "./App.css";
-// import { Footer } from "./components/Footer/Footer";
-// import { searchMovies } from "./Shared/Services/MovieService";
-import { MovieList } from "./components/MovieList/MovieList.jsx";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./Router.jsx";
 
 function App() {
   return (
-    <>
-      {/* <Footer /> */}
-      <MovieList />
-    </>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
 
