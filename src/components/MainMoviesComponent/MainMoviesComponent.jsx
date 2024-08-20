@@ -20,7 +20,7 @@ export default function PosterMovies() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % movieImages.length);
-    }, 3500);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -30,7 +30,7 @@ export default function PosterMovies() {
       <img src={movieImages[currentImageIndex]} alt="Movie Poster" />
 
       <section className="pm-mv-container">
-        <h2>Upcoming Movies</h2>
+        <h3>Upcoming Movies</h3>
         <UpcomingList />
       </section>
       <span className="pm-first-black-span"></span>

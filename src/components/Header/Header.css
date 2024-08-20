@@ -2,24 +2,36 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
+  margin: 0 auto;
   position: fixed;
   height: 70px;
   width: 100%;
-  top: 0;
+  top: 0px;
   z-index: 10;
-}
-h1{
-  margin: 40px 0 20px 0;
+  backdrop-filter: blur(4px) saturate(100%) contrast(80%) brightness(120%);
+  background-color: rgba(0, 0, 0, 0.237);
+  border-radius: 0 0 16px 16px;
 }
 
-h1:hover{
+h1 {
+  margin: 20px 0 20px 0;
+  width: 150px;
+ height: 40px;
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  filter: opacity(0.9);
+  transition: 0.2s ease-in-out;
+}
+
+h1:hover {
   color: #ccc;
   filter: opacity(0.8);
   transition: 0.2s ease-in-out;
 }
 
-.header-container ul{
+.header-container ul {
   display: flex;
   justify-content: space-around;
   align-items: center;

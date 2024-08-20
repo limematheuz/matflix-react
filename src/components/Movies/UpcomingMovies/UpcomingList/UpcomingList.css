@@ -35,6 +35,7 @@
 
 .up-arrow{
   min-width: 25px;
+  max-width: 25px;
 }
 
 .up-arrow:hover{

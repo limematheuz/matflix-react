@@ -5,10 +5,7 @@
 }
 
 .md-article-container {
-  border: 1px solid wheat;
   height: 100%;
-  
-
 }
 
 .md-article-container img {
@@ -27,36 +24,37 @@
   z-index: 1;
 }
 
-.md-info-container h2, p{
-    width: 40%;
-    color: white;
+.md-info-container h2,
+p {
+  width: 40%;
+  color: white;
 }
 
-.md-info-container p, span{
-    font-size: 1.1rem;
-    font-weight: 500;
+.md-info-container p,
+span {
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
-.md-info-container span{
-    color: #ccc;
-    font-size: 1rem;
+.md-info-container span {
+  color: #ccc;
+  font-size: 1rem;
 }
 
-.linkRick{
-    width: 10%;
-    min-width: 200px;
-    padding: 6px 16px;
-    border: 2px solid;
-    border-radius: 8px;
-    text-align: center;
+.linkRick {
+  width: 10%;
+  min-width: 200px;
+  padding: 6px 16px;
+  border: 2px solid;
+  border-radius: 8px;
+  text-align: center;
 }
 
-
-.md-black-bg{
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background: rgb(0, 0, 0);
+.md-black-bg {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
     rgb(0, 0, 0) 40%,
@@ -64,6 +62,6 @@
     rgba(0, 0, 0, 0.521) 80%,
     rgba(0, 0, 0, 0) 100%
   );
-    left: 0;
-    bottom: 0;
+  left: 0;
+  bottom: 0;
 }

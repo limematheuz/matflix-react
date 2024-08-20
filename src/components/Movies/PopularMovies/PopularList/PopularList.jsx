@@ -28,6 +28,8 @@ export default function PopularList() {
 
   return (
     <section className="pl-container" ref={sliderRef}>
+      <h3>Popular</h3>
+        <div className="pl-controllers-container">
         <button
           onClick={() => scroll(-1800)}
           className="pl-first-btn"
@@ -46,6 +48,7 @@ export default function PopularList() {
         >
           <img className="pl-arrow" src={arrowRight} alt="" />
         </button>
+      </div>
     </section>
   );
 }

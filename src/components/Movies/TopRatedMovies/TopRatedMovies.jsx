@@ -18,7 +18,7 @@ export default function TopRated() {
   };
   return (
     <section className="tr-container" ref={sliderRef}>
-      <h2>Top Rated</h2>
+      <h3>Top Rated</h3>
       <div className="tr-controllers-container">
         <button
           onClick={() => scroll(-1800)}

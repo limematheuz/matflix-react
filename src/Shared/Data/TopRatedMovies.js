@@ -67,6 +67,7 @@ export default function TopRatedMovies() {
   
 
   // Función para alternar el estado de favorito
+  
   function toggleFavorite(movieId) {
     const movie = movies.find((m) => m.id === movieId);
     if (movie) {

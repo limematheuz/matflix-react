@@ -27,10 +27,11 @@
     gap: 20px;
   }
 
-  .tr-container h2{
+  .tr-container h3{
     padding-bottom: 20px;
     position: sticky;
     left: 60px;
+    color: #fff;
     top: 0;
   }
   
