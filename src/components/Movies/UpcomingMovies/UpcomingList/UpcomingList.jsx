@@ -1,13 +1,26 @@
 import "./UpcomingList.css";
 import { UpcomingCard } from "../UpcomingCard/UpcomingCard.jsx";
-import useFetchMovies from "../../../../hooks/useFetchMovies.js";
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import arrowLeft from "../../../../assets/Icons/angle-left-solid.svg";
 import arrowRight from "../../../../assets/Icons/angle-right-solid.svg";
+import { getUpcomingMovies } from "../../../../Shared/Services/MovieService";
 
 export const UpcomingList = () => {
-  const movies = useFetchMovies();
+  const [movies, setMovies] = useState([]);
   const sliderRef = useRef(null);
+
+  useEffect(() => {
+    const fetchUpcomingMovies = async () => {
+      try {
+        const movies = await getUpcomingMovies();
+        setMovies(movies);
+      } catch (error) {
+        console.error('Error fetching upcoming movies:', error);
+      }
+    };
+
+    fetchUpcomingMovies();
+  }, []);
 
   const scroll = (scrollOffset) => {
     sliderRef.current.scrollLeft += scrollOffset;

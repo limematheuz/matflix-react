@@ -1,13 +1,26 @@
 import "./PopularList.css";
 import { PopularCard } from "../../PopularMovies/PopularCard/PopularCard.jsx";
-import useFetchPopular from "../../../../hooks/useFetchPopular.js";
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import arrowLeft from "../../../../assets/Icons/angle-left-solid.svg";
 import arrowRight from "../../../../assets/Icons/angle-right-solid.svg";
+import { getPopularMovies } from "../../../../Shared/Services/MovieService";  
 
 export default function PopularList() {
-  const popularMovies = useFetchPopular();
+  const [popularMovies, setPopularMovies] = useState([]);
   const sliderRef = useRef(null);
+
+  useEffect(() => {
+    const fetchPopularMovies = async () => {
+      try {
+        const movies = await getPopularMovies();
+        setPopularMovies(movies);
+      } catch (error) {
+        console.error('Error fetching popular movies:', error);
+      }
+    };
+
+    fetchPopularMovies();
+  }, []);
 
   const scroll = (scrollOffset) => {
     sliderRef.current.scrollLeft += scrollOffset;

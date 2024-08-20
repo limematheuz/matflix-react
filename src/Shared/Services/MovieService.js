@@ -1,8 +1,24 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
+// MovieService.js
+import axios from 'axios';
 
-export const MovieService = () => {
-  return (
-    <div>MovieService</div>
-  )
-}
+const API_URL = 'https://webapp-240820115338.azurewebsites.net/api';
+
+export const getPopularMovies = async () => {
+  try {
+    const response = await axios.get(`${API_URL}/PopularMovies`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching popular movies:', error);
+    throw error;
+  }
+};
+
+export const getUpcomingMovies = async () => {
+  try {
+    const response = await axios.get(`${API_URL}/UpcomingMovies`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching upcoming movies:', error);
+    throw error;
+  }
+};
