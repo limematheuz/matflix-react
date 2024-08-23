@@ -3,6 +3,17 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/Icons/generatedtext.png";
 
 export function Header() {
+  const removeUser = () => {
+    localStorage.removeItem("user");
+  }
+
+  const handleonLogout = () => {
+    removeUser();
+    navigate("/login");
+  }
+
+
+
   return (
     <header className="header-container">
       <Link to={"/"}>
@@ -18,7 +29,7 @@ export function Header() {
           <a href="">
             <li>Perfil</li>
           </a>
-          <a href="">
+          <a href="/login" onClick={handleonLogout} >
             <li>Logout</li>
           </a>
         </ul>
