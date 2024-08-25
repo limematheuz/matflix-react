@@ -1,6 +1,6 @@
 import "../../components/Header/Header.css";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/Icons/generatedtext.png";
+import Logo from "../../assets/Icons/logo.png";
 
 export function Header() {
   const removeUser = () => {
@@ -9,7 +9,7 @@ export function Header() {
 
   const handleonLogout = () => {
     removeUser();
-    // navigate("/login");
+    navigate("/login");
   }
 
 
