@@ -45,16 +45,16 @@ export function AuthForm() {
 
   return (
     <section className="af-container">
-      <Box sx={{width:"100%" }}>
-        <Box sx={{ borderBottom: 1, borderColor: "divider",}}>
+      <Box sx={{width:"100%", }}>
+        <Box sx={{ borderBottom: 1, borderColor: "divider", color:"#cccc", }}>
           <Tabs 
             value={value}
             onChange={handleChange}
             aria-label="basic tabs example"
-            centered
+            centered            
           >
-            <Tab label="Login" {...a11yProps(0)}  />
-            <Tab label="Register" {...a11yProps(1)} />
+            <Tab label="Login" {...a11yProps(0)}  sx={{fontWeight:"bold", color:"#cccc"}}/>
+            <Tab label="Register" {...a11yProps(1)}  sx={{fontWeight:"bold", color:"#ccc" }}/>
           </Tabs>
         </Box>
         <CustomTabPanel value={value} index={0}>
@@ -63,7 +63,6 @@ export function AuthForm() {
         <CustomTabPanel value={value} index={1}>
           <Register/>
         </CustomTabPanel>
-
       </Box>
     </section>
   );

@@ -1,7 +1,9 @@
 .af-container{
-border: 1px solid red;
+border: 2px solid #1976d2;
+border-radius: 8px;
+backdrop-filter: blur(30px) saturate(80%) contrast(90%) brightness(150%); 
 height: 70%;
-width: 400px;
+width: 500px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -9,8 +11,8 @@ align-items: center;
 
 @media screen and (max-width: 768px){
   .af-container{
-    height: 100%;
-    width: 100%;
+    height: 60%;
+    width: 90%;
   }
     
 }

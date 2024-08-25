@@ -28,7 +28,7 @@ export function Register() {
   return (
     <section className="register-container">
       <form onSubmit={handleRegister} className="registerForm-container">
-        <div>
+        <div className="register-input-container">
           <label>Username</label>
           <input
             type="text"
@@ -38,7 +38,7 @@ export function Register() {
             required
           />
         </div>
-        <div>
+        <div className="register-input-container">
           <label>Email</label>
           <input
             type="email"
@@ -48,7 +48,7 @@ export function Register() {
             required
           />
         </div>
-        <div>
+        <div className="register-input-container">
           <label>Password</label>
           <input
             type="password"
@@ -63,7 +63,7 @@ export function Register() {
           {loading ? "Registering..." : "Register"}
         </button>
       </form>
-      {message && <p>{message}</p>}
+      <div className="registerForm-errorMessage">{message && <p>{message}</p>}</div>
     </section>
   );
 }
