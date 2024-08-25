@@ -16,24 +16,24 @@ export function Header() {
 
   return (
     <header className="header-container">
-      <Link to={"/"}>
-        <h1>
-          <img src={Logo} alt="" />
-        </h1>
-      </Link>
-      <nav>
-        <ul>
-          <a href="">
-            <li>Favoritos</li>
-          </a>
-          <a href="">
-            <li>Perfil</li>
-          </a>
-          <a href="/login" onClick={handleonLogout} >
-            <li>Logout</li>
-          </a>
-        </ul>
-      </nav>
-    </header>
+    <Link to={"/"}>
+      <h1>
+        <img src={Logo} alt="Logo" />
+      </h1>
+    </Link>
+    <nav>
+      <ul>
+        <li>
+          <Link to="/favoritos">Favoritos</Link>
+        </li>
+        <li>
+          <Link to="/perfil">Perfil</Link>
+        </li>
+        <li>
+          <Link to="/login" onClick={handleonLogout}>Logout</Link>
+        </li>
+      </ul>
+    </nav>
+  </header>
   );
 }
