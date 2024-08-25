@@ -21,7 +21,7 @@ export function Login() {
   return (
     <section className='login-container'>
       <form onSubmit={handleLogin} className='loginForm-container' >
-        <div>
+        <div className='input-container'>
           <label>Username</label>
           <input
             type="name"

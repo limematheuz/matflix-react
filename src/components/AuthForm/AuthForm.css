@@ -1,8 +1,16 @@
 .af-container{
-/* border: 1px solid red; */
+border: 1px solid red;
 height: 70%;
-width: 30%;
+width: 400px;
 display: flex;
 justify-content: center;
 align-items: center;
+}
+
+@media screen and (max-width: 768px){
+  .af-container{
+    height: 100%;
+    width: 100%;
+  }
+    
 }
