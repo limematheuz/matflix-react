@@ -1,6 +1,6 @@
 .dots {
   width: 40px;
-  height: 22.4px;
+  height: 20px;
   background: radial-gradient(farthest-side,#1976d2 90%,#0000) 50%  0,
          radial-gradient(farthest-side,#1976d2 90%,#0000) 100% 0;
   background-size: 9.6px 9.6px;

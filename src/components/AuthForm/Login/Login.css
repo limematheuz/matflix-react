@@ -39,7 +39,7 @@
 }
 
 .login-input-container input:focus {
-  outline: 2px solid #00d3fd;
+  outline: 2px solid #8ae5f7;
 }
 
 .login-input-container input::placeholder {
@@ -52,8 +52,11 @@
 }
 
 .loginForm-container button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
-  padding: 10px 60px;
+  width: 60%;
   background-color: #ffffff;
   color: #1976d2;
   font-weight: bold;

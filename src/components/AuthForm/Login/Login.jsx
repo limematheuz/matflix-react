@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AuthService from "../../../Shared/Services/AuthService";
 import "./Login.css";
-import { DotLoader } from "../../Helpers/DotLoader";
+import { DotLoader } from "../../Loaders/DotLoader";
 
 export function Login() {
   const [username, setUsername] = useState("");
