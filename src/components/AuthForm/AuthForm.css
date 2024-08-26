@@ -2,7 +2,7 @@
 border: 2px solid #1976d2;
 border-radius: 12px;
 backdrop-filter: blur(30px) saturate(80%) contrast(90%) brightness(150%); 
-height: 70%;
+height: 600px;
 width: 500px;
 display: flex;
 justify-content: center;
@@ -19,8 +19,10 @@ position: relative;
 }
 @media screen and (max-width: 768px){
   .af-container{
-    height: 70%;
-    width: 90%;
+    /* height: 80%;
+    width: 90%; */
+    min-height: 400px;
+    max-height: 600px;
   }
     
 }

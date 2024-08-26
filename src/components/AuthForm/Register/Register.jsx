@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Register.css";
 import AuthService from "../../../Shared/Services/AuthService";
+import { DotLoader } from "../../Helpers/DotLoader";
 
 export function Register() {
   const [username, setUsername] = useState("");
@@ -60,7 +61,7 @@ export function Register() {
         </div>
         <p>Password must have 8 characters, at least one letter, one number and one special character</p>
         <button type="submit" disabled={loading}>
-          {loading ? "Registering..." : "Register"}
+          {loading ? <DotLoader/> : "Register"}
         </button>
       </form>
       <div className="registerForm-errorMessage">{message && <p>{message}</p>}</div>
