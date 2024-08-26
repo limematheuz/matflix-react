@@ -30,7 +30,7 @@ export function Header() {
           <Link to="/perfil">Perfil</Link>
         </li>
         <li>
-          <Link to="/login" onClick={handleonLogout}>Logout</Link>
+          <Link to="/auth" onClick={handleonLogout}>Logout</Link>
         </li>
       </ul>
     </nav>

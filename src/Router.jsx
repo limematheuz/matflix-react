@@ -10,7 +10,7 @@ export default function Router() {
   return (
     <Routes>
       <Route path="/auth" element={<AuthPage />} />
-      <Route path="/home" element={<PrivateRoute element={HomePage} />} />
+      <Route path="/" element={<PrivateRoute element={HomePage} />} />
       <Route path="/detailed-upcoming/:id" element={<PrivateRoute element={UpcomingDetail} />} />
       <Route path="/detailed-popular/:id" element={<PrivateRoute element={PopularDetail} />} />
     </Routes>
