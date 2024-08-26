@@ -2,7 +2,7 @@
 border: 2px solid #1976d2;
 border-radius: 12px;
 backdrop-filter: blur(30px) saturate(80%) contrast(90%) brightness(150%); 
-height: 60%;
+height: 70%;
 width: 500px;
 display: flex;
 justify-content: center;
@@ -10,22 +10,19 @@ align-items: center;
 position: relative;
 }
 
-/* .auth-logo{
-
-
-max-width: 100%;
-max-height: 15%;
-top: 0;
-left: 0;
-  position: fixed;
-  border: 1px solid red;
-  z-index: 2;
-} */
-
+@media screen and (max-width: 1024px){
+  .af-container{
+    height: 80%;
+    width: 80%;
+  }
+  
+}
 @media screen and (max-width: 768px){
   .af-container{
-    height: 60%;
+    height: 70%;
     width: 90%;
   }
     
 }
+
+
