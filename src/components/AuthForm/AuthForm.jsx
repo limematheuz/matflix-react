@@ -67,24 +67,3 @@ export function AuthForm() {
     </section>
   );
 }
-
-// export function AuthForm() {
-//     const [value, setValue] = React.useState(0);
-
-//     const handleChange = (event, newValue) => {
-//       setValue(newValue);
-//     };
-
-//     return (
-//       <Box sx={{ width: "100vw", height: "100vh", bgcolor: "#ccccc" }}>
-//         <Tabs value={value} onChange={handleChange} centered>
-//           <Tab label="Item One">
-//             <Login />
-//           </Tab>
-//           <Tab label="Item Two">
-//               <Login />
-//           </Tab>
-//         </Tabs>
-//       </Box>
-//     );
-//   }

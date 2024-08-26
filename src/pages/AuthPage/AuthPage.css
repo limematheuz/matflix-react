@@ -20,5 +20,5 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
-    filter: blur(2px) brightness(0.7) saturate(0.9);
+    filter: blur(2px) brightness(0.6) saturate(0.9);
 }
