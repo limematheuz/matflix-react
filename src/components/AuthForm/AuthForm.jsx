@@ -1,11 +1,12 @@
 import "../../components/AuthForm/AuthForm.css";
+import logo from "../../assets/Icons/logo.png";
 import * as React from "react";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import { Login } from "./Login/Login";
-import Register from './Register/Register';
+import Register from "./Register/Register";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -45,23 +46,31 @@ export function AuthForm() {
 
   return (
     <section className="af-container">
-      <Box sx={{width:"100%", }}>
-        <Box sx={{ borderBottom: 1, borderColor: "divider", color:"#cccc", }}>
-          <Tabs 
+      <Box sx={{ width: "100%" }}>
+        <Box sx={{ borderBottom: 1, borderColor: "divider", color: "#ffffff" }}>
+          <Tabs
             value={value}
             onChange={handleChange}
             aria-label="basic tabs example"
-            centered            
+            centered
           >
-            <Tab label="Login" {...a11yProps(0)}  sx={{fontWeight:"bold", color:"#cccc"}}/>
-            <Tab label="Register" {...a11yProps(1)}  sx={{fontWeight:"bold", color:"#ccc" }}/>
+            <Tab
+              label="Login"
+              {...a11yProps(0)}
+              sx={{ fontWeight: "bold", color: "#ffffff" }}
+            />
+            <Tab
+              label="Register"
+              {...a11yProps(1)}
+              sx={{ fontWeight: "bold", color: "#ffffff" }}
+            />
           </Tabs>
         </Box>
         <CustomTabPanel value={value} index={0}>
           <Login />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
-          <Register/>
+          <Register />
         </CustomTabPanel>
       </Box>
     </section>

@@ -31,9 +31,40 @@
     width: 100%;
     height: 50px;
     margin: 10px 0;
+    padding-left: 10px;
     background-color: transparent;
     border: 2px solid  #1976d2;
     border-radius: 8px;
+}
+
+.register-input-container input:focus{
+    outline: 2px solid #00d3fd;
+}
+
+.register-input-container input::placeholder{
+    color: #ffffffc8;
+    padding-left: 10px;
+}
+
+.register-input-container label{
+    color: #ffffff;
+}
+
+.registerForm-container p{
+    text-align: center;
+    width: 80%;
+    color: #ffffff;
+    font-size: 0.8rem;
+    margin: 10px 0;
+}
+
+.registerForm-container button{
+    margin-top: 10px;
+    padding: 10px 60px;
+    background-color: #ffffff;
+    color: #1976d2;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .registerForm-errorMessage{

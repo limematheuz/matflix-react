@@ -15,11 +15,11 @@ export function Register() {
     setMessage("");
     try {
       const response = await AuthService.register(username, email, password);
-      console.log("Registration successful:", response);
+      // console.log("Registration successful:", response);
       window.location.href = "/";
     } catch (error) {
-      console.error("Registration failed:", error.response || error.message);
-      setMessage("Registration failed. Please check your credentials.");
+      // console.error("Registration failed:", error.response || error.message);
+      setMessage("Registration failed. Please check your credentials!");
     } finally {
       setLoading(false);
     }
@@ -34,7 +34,7 @@ export function Register() {
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            placeholder="Username"
+            placeholder=""
             required
           />
         </div>
@@ -44,7 +44,7 @@ export function Register() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email"
+            placeholder="user@gmail.com"
             required
           />
         </div>
@@ -54,11 +54,11 @@ export function Register() {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="Password"
+            placeholder=""
             required
           />
         </div>
-
+        <p>Password must have 8 characters, at least one letter, one number and one special character</p>
         <button type="submit" disabled={loading}>
           {loading ? "Registering..." : "Register"}
         </button>
